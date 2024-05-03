@@ -11,6 +11,10 @@ Cenario: fazer login com dado validos
 Quando  inserir usuario é senha validos 
 Entao deve ser direcionados para a tela checkout
 
+Esquema do Cenario:fazer login com dados validos 
+Quando inserir <e-mail> e <senha>
+Entao Deve dar <acesso>
+
 Exemplo:
 e-mail                     | senha       |acesso
 "user@example.com "        |"123456"     |deve ser direcionado checkout
@@ -20,6 +24,10 @@ e-mail                     | senha       |acesso
 Cenario: fazer login com dados invalidos
 Quando inserir usuario é senha invalidos 
 Entao Deve exibir uma mensagem de alerta ( Usuario ou senha invalidos )
+
+Esquema do Cenario: fazer login com dados invalidos
+Quando inserir seu <e-mail> e <senha>
+Entao deve exibir <mensagem> de alerta 
 
 Exemplo: 
 e-mail                     | senha       | mensagem
